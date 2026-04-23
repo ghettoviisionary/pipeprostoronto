@@ -1,10 +1,11 @@
 {
-  "functions": {
-    "apisend.js": {
-      "runtime": "edge"
-    }
-  },
-  "rewrites": [
-    { "source": "/api/send", "destination": "/apisend" }
+  "version": 2,
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "apisend.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/send", "dest": "/apisend.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
