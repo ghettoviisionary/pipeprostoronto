@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "apisend.js": {
+      "runtime": "edge"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/send", "destination": "/apisend" }
+  ]
+}
