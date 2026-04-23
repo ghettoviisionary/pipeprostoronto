@@ -34,7 +34,7 @@ export default async function handler(req) {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        from: "Pipe Pros Toronto <noreply@pipeprostoronto.ca>",
+        from: "Pipe Pros Toronto <noreply@pipeprsostoronto.ca>",
         to: ["pipeprostoronto@gmail.com"],
         reply_to: email,
         subject: "New Customer Inquiry — Pipe Pros Toronto",
